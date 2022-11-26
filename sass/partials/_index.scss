@@ -1,8 +1,18 @@
 @use "./variables";
 
-main{
-    background-image: url(../img/M314_1080x.webp);
+main {
+    height: 40vw;
+    width: 100%;
+    background-image: url(../img/vgse2C-XoBNuTLoGkeA6qA==.webp);
     background-repeat: no-repeat;
-    // height: 800px;
-    // width: 100vw;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    text-align: justify;
 }

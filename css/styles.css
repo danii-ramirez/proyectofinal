@@ -98,8 +98,18 @@ nav {
 }
 
 main {
-  background-image: url(../img/M314_1080x.webp);
+  height: 40vw;
+  width: 100%;
+  background-image: url(../img/vgse2C-XoBNuTLoGkeA6qA==.webp);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=styles.css.map */
