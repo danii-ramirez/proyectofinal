@@ -1,0 +1,17 @@
+@use "./variables";
+
+footer {
+    height: 10vh;
+    background-color: variables.$backgroud-primary;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
