@@ -1,0 +1,102 @@
+@use "./variables";
+
+header {
+    background-color: variables.$backgroud-primary;
+}
+
+#logo {
+    grid-area: logo;
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+#nav-menu {
+    grid-area: menu;
+}
+
+#nav-button {
+    grid-area: button;
+    padding: 10px;
+    font-size: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "logo . button"
+        "menu menu menu";
+}
+
+.nav-menu {
+    @include variables.reset-list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        a {
+            @include variables.reset-a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+            color: white;
+
+            &:hover {
+                color: black;
+                background-color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (min-width: variables.$screen-size-large) {
+    nav {
+        display: grid;
+        grid-template-columns: 0.2fr 0.5fr auto;
+        grid-template-areas:
+            "logo . menu";
+        align-items: center;
+    }
+
+    #logo {
+        margin-left: 100px;
+        width: 50%;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        justify-content: end;
+
+        li {
+            height: 50%;
+
+            a {
+                width: 50%;
+            }
+        }
+    }
+
+    #nav-button {
+        @include variables.display-none;
+    }
+}
+
+.d-none {
+    @include variables.display-none;
+}
