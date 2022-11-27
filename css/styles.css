@@ -172,24 +172,24 @@ main h1 {
   flex-direction: column;
   align-items: center;
 }
+.section-main article img {
+  height: 400px;
+  width: 300px;
+}
 .section-main article div {
   width: 100%;
 }
-.section-main article img {
-  height: 300px;
-  width: 40vw;
-}
-.section-main article h2 {
+.section-main article div h2 {
   font-size: 30px;
   color: #ff0f7b;
   margin: 5px;
   text-align: center;
 }
-.section-main article p {
+.section-main article div p {
   text-align: center;
   margin: 20px;
 }
-.section-main article a {
+.section-main article div a {
   color: black;
   text-decoration: none;
   background-color: #ff0f7b;
@@ -211,6 +211,13 @@ main h1 {
 @media (min-width: 1024px) {
   main h1 {
     font-size: 60px;
+  }
+  .section-main article {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .section-main article div {
+    width: 50%;
   }
 }
 
