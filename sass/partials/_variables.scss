@@ -18,3 +18,8 @@ $backgroud-primary: #000123;
     color: black;
     text-decoration: none;
 }
+
+@mixin img-hw($height, $width) {
+    height: $height;
+    width: $width;
+}
