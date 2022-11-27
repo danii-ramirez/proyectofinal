@@ -9,7 +9,7 @@
 
 header {
   height: 10vh;
-  background-color: #000123;
+  border-bottom: 3px solid black;
 }
 
 #logo {
@@ -44,7 +44,6 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #000123;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +142,7 @@ footer .footer-redes li a:hover {
   font-weight: bold;
 }
 
-main {
+.banner {
   height: 65vh;
   width: 100%;
   background-image: url(../img/vgse2C-XoBNuTLoGkeA6qA==.webp);
@@ -155,7 +154,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-main h1 {
+.banner h1 {
   font-size: 40px;
   text-align: center;
   background-color: transparent;
@@ -217,6 +216,42 @@ main h1 {
     justify-content: space-around;
   }
   .section-main article div {
+    width: 50%;
+  }
+}
+.h1-resenas {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin: 50px;
+}
+
+.container-resenas {
+  display: flex;
+  flex-direction: column;
+}
+
+.resenas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resenas h2 {
+  color: #ff0f7b;
+  margin: 20px;
+}
+.resenas p {
+  color: white;
+  margin: 20px;
+}
+
+@media (min-width: 1024px) {
+  .container-resenas {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60vh;
+  }
+  .resenas {
     width: 50%;
   }
 }

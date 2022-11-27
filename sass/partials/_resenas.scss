@@ -1,0 +1,41 @@
+@use "./variables";
+
+.h1-resenas {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 50px;
+}
+
+.container-resenas {
+    display: flex;
+    flex-direction: column;
+}
+
+.resenas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: variables.$backgroud-secondary;
+        margin: 20px;
+    }
+
+    p {
+        color: white;
+        margin: 20px;
+    }
+}
+
+@media (min-width: variables.$screen-size-large) {
+    .container-resenas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 60vh;
+    }
+
+    .resenas {
+        width: 50%;
+    }
+}

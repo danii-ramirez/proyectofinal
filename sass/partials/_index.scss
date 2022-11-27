@@ -1,6 +1,6 @@
 @use "./variables";
 
-main {
+.banner {
     @include variables.img-hw(65vh, 100%);
     background-image: url(../img/vgse2C-XoBNuTLoGkeA6qA==.webp);
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ main {
 
             h2 {
                 font-size: 30px;
-                color: #ff0f7b;
+                color: variables.$backgroud-secondary;
                 margin: 5px;
                 text-align: center;
             }
@@ -51,7 +51,7 @@ main {
 
             a {
                 @include variables.reset-a;
-                background-color: #ff0f7b;
+                background-color: variables.$backgroud-secondary;
                 border: none;
                 color: white;
                 padding: 15px 32px;
