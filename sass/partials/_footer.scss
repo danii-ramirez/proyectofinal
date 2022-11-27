@@ -1,7 +1,7 @@
 @use "./variables";
 
 footer {
-    height: 10vh;
+    height: 15vh;
     background-color: variables.$backgroud-primary;
     color: white;
     display: flex;
@@ -13,5 +13,35 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .footer-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .footer-text {
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .footer-redes {
+        @include variables.reset-list;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            margin: 5px;
+
+            a {
+                @include variables.reset-a;
+                color: white;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }

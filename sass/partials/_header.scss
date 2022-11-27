@@ -38,6 +38,7 @@ nav {
 
 .nav-menu {
     @include variables.reset-list;
+    background-color: variables.$backgroud-primary;
     display: flex;
     flex-direction: column;
     align-items: center;

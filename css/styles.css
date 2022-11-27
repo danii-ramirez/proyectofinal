@@ -43,6 +43,7 @@ nav {
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: #000123;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +100,7 @@ nav {
 }
 
 footer {
-  height: 10vh;
+  height: 15vh;
   background-color: #000123;
   color: white;
   display: flex;
@@ -112,9 +113,36 @@ footer div {
   justify-content: center;
   align-items: center;
 }
+footer .footer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .footer-text {
+  font-size: 15px;
+  padding-top: 5px;
+}
+footer .footer-redes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-redes li {
+  margin: 5px;
+}
+footer .footer-redes li a {
+  color: black;
+  text-decoration: none;
+  color: white;
+}
+footer .footer-redes li a:hover {
+  font-weight: bold;
+}
 
 main {
-  height: 80vh;
+  height: 75vh;
   width: 100%;
   background-image: url(../img/vgse2C-XoBNuTLoGkeA6qA==.webp);
   background-repeat: no-repeat;
@@ -124,8 +152,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  text-align: justify;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
