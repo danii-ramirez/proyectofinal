@@ -8,7 +8,6 @@
 }
 
 header {
-  height: 10vh;
   border-bottom: 3px solid black;
 }
 
@@ -236,6 +235,10 @@ footer .footer-redes li a:hover {
   flex-direction: column;
   align-items: center;
 }
+.resenas img {
+  height: 250px;
+  width: 250px;
+}
 .resenas h2 {
   color: #ff0f7b;
   margin: 20px;
@@ -249,7 +252,6 @@ footer .footer-redes li a:hover {
   .container-resenas {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 60vh;
   }
   .resenas {
     width: 50%;

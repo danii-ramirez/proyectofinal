@@ -17,6 +17,10 @@
     flex-direction: column;
     align-items: center;
 
+    img {
+        @include variables.img-hw(250px, 250px);
+    }
+
     h2 {
         color: variables.$backgroud-secondary;
         margin: 20px;
@@ -32,7 +36,6 @@
     .container-resenas {
         flex-direction: row;
         flex-wrap: wrap;
-        height: 60vh;
     }
 
     .resenas {
