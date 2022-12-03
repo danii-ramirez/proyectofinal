@@ -1,0 +1,24 @@
+@use "./variables";
+
+#login {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    h1 {
+        color: variables.$backgroud-secondary;
+    }
+
+    div {
+        margin: 10px;
+    }
+}
+
+#recoverpassword {
+    @include variables.reset-a;
+    color: white;
+
+    &:hover {
+        color: variables.$backgroud-secondary;
+    }
+}
