@@ -1,0 +1,18 @@
+@use "./variables";
+
+.contacto-title {
+    color: variables.$backgroud-secondary;
+}
+
+.contacto {
+    color: white;
+
+    div {
+        margin: 10px;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+    }
+}

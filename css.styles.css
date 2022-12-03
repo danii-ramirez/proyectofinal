@@ -294,12 +294,5 @@ h1 {
 .contacto {
   color: white;
 }
-.contacto div {
-  margin: 10px;
-}
-.contacto textarea {
-  min-height: 100px;
-  max-height: 200px;
-}
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=css.styles.css.map */

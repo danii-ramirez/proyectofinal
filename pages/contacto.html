@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Juegos Vortice</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Juegos Vortice - Contacto</title>
 </head>
 
 <body onresize="resizeWindow()" onload="resizeWindow()">
     <header>
         <nav>
-            <a id="logo" href="./index.html">
-                <img src="./img/logo.svg" alt="Juegos Vortice">
+            <a id="logo" href="../index.html">
+                <img src="../img/logo.svg" alt="Juegos Vortice">
             </a>
 
             <ul id="nav-menu">
                 <li>
-                    <a href="./pages/juegos.html">Juegos</a>
+                    <a href="./juegos.html">Juegos</a>
                 </li>
                 <li>
-                    <a href="./pages/resenas.html">Reseñas</a>
+                    <a href="./resenas.html">Reseñas</a>
                 </li>
                 <li>
-                    <a href="./pages/contacto.html">Contacto</a>
+                    <a href="#">Contacto</a>
                 </li>
                 <li>
                     <a href="#">Login</a>
@@ -37,39 +38,41 @@
         </nav>
     </header>
 
-    <main class="banner">
-        <h1>Tu sitio preferido de videojuegos</h1>
+    <main class="container-fluid">
+        <h1 class="contacto-title">Contacto</h1>
+
+        <div class="contacto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="text" id="email" class="form-control">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6">
+                    <label for="nombre" class="form-label">Nombre y apellido:</label>
+                    <input type="text" id="nombre" class="form-control">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6">
+                    <label for="asunto" class="form-label">Asunto:</label>
+                    <input type="text" id="asunto" class="form-control">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-6">
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
     </main>
-
-    <section class="section-main">
-        <article>
-            <img src="./img/EEyXRwn6thCqK2tcCjQcNQ==.webp" alt="">
-            <div>
-                <h2>JUEGOS DE ESTRATEGIA EN TIEMPO REAL</h2>
-                <p>Rétate a ti mismo en una batalla de ingenio y habilidades frente a personajes no jugadores y otros
-                    jugadores parecidos.</p>
-                <a href="./pages/juegos.html">VER MÁS</a>
-            </div>
-        </article>
-
-        <article>
-            <img src="./img/OYHnNOkPaViSb_DW6J_gSw==.webp" alt="">
-            <div>
-                <h2>JUEGOS DE ROL</h2>
-                <p>Te invitamos a que experimentes mundos exóticos en los que tu misión es encontrar la solución.</p>
-                <a href="./pages/juegos.html">VER MÁS</a>
-            </div>
-        </article>
-
-        <article>
-            <img src="./img/EEyXRwn6thCqK2tcCjQcNQ== (1).webp" alt="">
-            <div>
-                <h2>VIDEOJUEGOS CASUALES</h2>
-                <p>Una colección de juegos únicos y peculiares para que relajes tu día.</p>
-                <a href="./pages/juegos.html">VER MÁS</a>
-            </div>
-        </article>
-    </section>
 
     <footer>
         <div>
@@ -110,7 +113,7 @@
         </div>
     </footer>
 
-    <script src="./js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>
