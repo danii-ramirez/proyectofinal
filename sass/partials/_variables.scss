@@ -3,7 +3,7 @@ $screen-size-medium: 768px;
 $screen-size-large: 1024px;
 
 $backgroud-primary: #000123;
-$backgroud-secondary:#ff0f7b;
+$backgroud-secondary: #ff0f7b;
 
 @mixin display-none {
     display: none;
@@ -23,4 +23,11 @@ $backgroud-secondary:#ff0f7b;
 @mixin img-hw($height, $width) {
     height: $height;
     width: $width;
+}
+
+@mixin h1-title {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 50px;
 }
